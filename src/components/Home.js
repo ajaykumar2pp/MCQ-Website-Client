@@ -20,7 +20,7 @@ const Home = () => {
     </form>
 
     <div className='start'>
-        <NavLink className='btn' to={'quiz'}>Start Quiz</NavLink>
+        <NavLink className='btn' to="/mcq">Start Quiz</NavLink>
     </div>
 
 </div>
