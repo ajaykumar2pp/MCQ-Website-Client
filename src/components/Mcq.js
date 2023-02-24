@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Question from "./Question"
 const Mcq = () => {
  
 
@@ -15,11 +15,11 @@ const Mcq = () => {
     <div className='container'>
  
 
- 
+        <Question />
 
         <div className='grid'>
-            <button className='btn prev' onClick={onPrev}>Prev</button>
-            <button className='btn next' onClick={onNext}>Next</button>
+            <button className='btn btn-primary' onClick={onPrev}>Prev</button>
+            <button className='btn btn-success' onClick={onNext}>Next</button>
         </div>
     </div>
   )
