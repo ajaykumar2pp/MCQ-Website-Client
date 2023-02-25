@@ -6,11 +6,16 @@ import '../node_modules/react-bootstrap/dist/react-bootstrap'
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import reportWebVitals from './reportWebVitals';
 
+// *****  Redux store  *******//
+import store from "./redux/store"
+import { Provider } from 'react-redux';
+
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-
-    <App />
- 
+    <Provider store={store}>
+        <App />
+    </Provider>
 );
 
 reportWebVitals();

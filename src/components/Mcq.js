@@ -1,7 +1,15 @@
 import React from 'react'
 import Question from "./Question"
+import { useEffect } from 'react'
+/** redux store import */
+import { useSelector } from 'react-redux'
 const Mcq = () => {
  
+    const state = useSelector(state => state)
+
+    useEffect(() => {
+        // console.log(state)
+    })
 
     function onNext(){
         console.log('On next click')
